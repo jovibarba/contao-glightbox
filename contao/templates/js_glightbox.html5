@@ -1,4 +1,10 @@
 <?php $GLOBALS['TL_CSS']['glightbox'] = 'bundles/contaoglightbox/css/glightbox.min.css|static'; ?>
+<?php
+// Optionen aus dem Seitenlayout (Abschnitt "GLightbox") laden.
+// Nur gesetzte Werte werden übergeben, der Selektor ist fest vorgegeben.
+$glightboxOptions = \InspiredMinds\ContaoGLightbox\GLightboxOptions::forCurrentPage();
+$glightboxOptions['selector'] = 'a[data-lightbox]';
+?>
 <script src="<?= $this->asset('js/glightbox.min.js', 'contao_g_lightbox') ?>"></script>
 <script<?= $this->attrs()->setIfExists('nonce', $this->nonce('script-src')) ?>>
 (function(){
@@ -10,8 +16,6 @@
       element.setAttribute('data-gallery', (Math.random() + 1).toString(36).substring(7));
     }
   });
-  GLightbox({
-    selector: 'a[data-lightbox]'
-  });
+  GLightbox(<?= json_encode($glightboxOptions, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) ?>);
 })();
 </script>

@@ -16,3 +16,8 @@ To use it with the modern Twig layout:
     {{ include('@Contao/js_glightbox') }}
 {% endblock %}
 ```
+
+Backend configuration
+---------------------
+
+The most common GLightbox options can be configured per page layout in the Contao back end (section "GLightbox" in the page layout). Options left at "Default" are not passed to GLightbox, so its built-in defaults apply. Run the database migration (`contao:migrate`) after installing or updating the extension.
