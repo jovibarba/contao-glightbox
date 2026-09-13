@@ -1,22 +1,33 @@
 {
-    "name": "inspiredminds/contao-glightbox",
-    "description": "Contao extension to integrate GLightbox.",
+    "name": "jovibarba/contao-glightbox",
+    "description": "Fork of inspiredminds/contao-glightbox: GLightbox options configurable in the page layout and per gallery element. Replaces the original package.",
     "type": "contao-bundle",
+    "keywords": [
+        "contao",
+        "contao-bundle",
+        "glightbox",
+        "lightbox",
+        "gallery"
+    ],
     "license": "LGPL-3.0-or-later",
-    "homepage": "https://github.com/inspiredminds/contao-glightbox",
+    "homepage": "https://github.com/Jovibarba/contao-glightbox",
     "authors": [
         {
             "name": "Fritz Michael Gschwantner",
             "email": "fmg@inspiredminds.at",
             "role": "Developer"
+        },
+        {
+            "name": "Jovibarba",
+            "homepage": "https://github.com/jovibarba",
+            "role": "Fork maintainer"
         }
     ],
-	"support": {
-		"issues": "https://github.com/inspiredminds/contao-glightbox/issues",
-		"source": "https://github.com/inspiredminds/contao-glightbox",
-		"forum": "https://community.contao.org/de"
-	},
-	"funding": [
+    "support": {
+        "issues": "https://github.com/Jovibarba/contao-glightbox/issues",
+        "source": "https://github.com/Jovibarba/contao-glightbox"
+    },
+    "funding": [
         {
             "type": "github",
             "url": "https://github.com/sponsors/fritzmg"
@@ -26,6 +37,9 @@
         "php": ">=8.1",
         "contao/core-bundle": "^5.3",
         "symfony/http-kernel": "^5.4 || ^6.4 || ^7.4"
+    },
+    "replace": {
+        "inspiredminds/contao-glightbox": "1.0.8"
     },
     "autoload": {
         "psr-4": {

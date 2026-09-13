@@ -1,5 +1,9 @@
-[![](https://img.shields.io/packagist/v/inspiredminds/contao-glightbox.svg)](https://packagist.org/packages/inspiredminds/contao-glightbox)
-[![](https://img.shields.io/packagist/dt/inspiredminds/contao-glightbox.svg)](https://packagist.org/packages/inspiredminds/contao-glightbox)
+[![](https://img.shields.io/packagist/v/jovibarba/contao-glightbox.svg)](https://packagist.org/packages/jovibarba/contao-glightbox)
+
+> **Fork** von [inspiredminds/contao-glightbox](https://github.com/inspiredminds/contao-glightbox) mit zwei Ergänzungen:
+> GLightbox-Optionen sind im Seitenlayout konfigurierbar und pro Galerie-Element überschreibbar.
+> Das Paket ersetzt das Original (`replace`), beide dürfen nicht gleichzeitig installiert sein.
+> Installation: `composer require jovibarba/contao-glightbox`
 
 Contao GLightbox
 =========================
